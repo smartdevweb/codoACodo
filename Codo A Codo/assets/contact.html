@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Me Anything!</title>
+    <meta name="description" content="Tienda online inspirada en mis gatas">
+    <meta name="keywords" content="cats, clothes, fashion store">
+    <meta name="author" content="Fiorella Caruso">
+    <meta property="og:image" content="https://tinyurl.com/mv5bx95u">
+    <link rel="icon" href="imgs/icons/brandIcon.ico">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="https://kit.fontawesome.com/172679f9c4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="index" class="banner">
+            <div class="title">
+                <h1 class="centered btitle">Get In Touch</h1>
+            </div>
+            <div class="centered">
+                <h2 class="stitle centered">Leemos tus mensajes & Resolvemos tus dudas</h2>
+            </div>
+        </div>
+        <div class="navbox">
+            <nav>
+                <ul>
+                    <li class="centered"><a href="../index.html"><img class="linkIcons centered"
+                                src="imgs/icons/home.png" alt="Home"><span class="mainLinks centered">Home</span></a>
+                    </li>
+                    <li class="centered"><a href="gallery.html"><img class="linkIcons centered"
+                                src="imgs/icons/camera.png" alt="Gatlería"><span
+                                class="mainLinks centered">Gatlería</span></a></li>
+                    <li class="centered"><a href="faqs.html"><img class="linkIcons centered" src="imgs/icons/faq.png"
+                                alt="F.A.Q."><span class="mainLinks centered">F.A.Q.</span></a></li>
+                    <li class="centered"><a href="#contactForm"><img class="linkIcons centered"
+                                src="imgs/icons/contact.png" alt="Contacto"><span
+                                class="mainLinks centered">Contacto</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="contactForm">
+            <form action="https://formspree.io/f/moqbklzd" method="POST" target="_blank">
+                <fieldset>
+                    <legend>You Have Something To Say</legend>
+                    <label for="name">Nombre:</label>
+                    <span class="break"></span>
+                    <input type="text" id="name" name="Nombre" placeholder="Nombre/Apodo" maxlength="15" size="45">
+                    <span class="break"></span>
+                    <label for="mail">Mail de contacto:</label>
+                    <span class="break"></span>
+                    <input type="email" id="mail" name="Correo electrónico" placeholder="mail@email.com" size="45">
+                    <span class="break"></span>
+                    <label for="social">Red social/Webpage:</label>
+                    <span class="break"></span>
+                    <input type="url" id="social" name="Red social" placeholder="http://..." size="45">
+                    <span class="break"></span>
+                    <label for="imageFile">¡Estampa a tu propio gato!</label>
+                    <span class="break"></span>
+                    <input type="file" id="imageFile" name="Archivo/Imagen">
+                    <span class="break"></span>
+                    <label for="newsletter">Subscribirme Al Newsletter</label>
+                    <input type="checkbox" id="newsletter" value="Acepta newsletter">
+                    <span class="break"></span>
+                    <textarea name="Comentarios" rows="10" cols="45"
+                        placeholder="¿Dudas? ¿Sugerencias? ¿Algún mensaje?"></textarea>
+                    <span class="break"></span>
+                    <button type="reset">Reiniciar</button>
+                    <button id="buttonSubmit" type="submit" onclick="return formSend();">Envíar!</button>
+                </fieldset>
+            </form>
+            <div id="wrong"></div>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <div class="centered">
+            <div class="author centered">
+                <a href="http://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=1127904670" target="_blank"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:fiorellaicaruso@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="http://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="http://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright centered">Fiorella Caruso @ Codo A Codo '22</div>
+    </footer>
+
+    <script src="validationForm.js"></script>
+</body>
+
+</html>

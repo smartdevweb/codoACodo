@@ -1,0 +1,489 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: #040406;
+}
+
+html {
+    width: 100vw;
+}
+
+@font-face {
+    font-family: "Austie solid";
+    src: url("fonts/austie-bost-you-wear-flowers/Austie\ Bost\ You\ Wear\ Flowers\ Solid.ttf");
+}
+
+@font-face {
+    font-family: "Hanging Letters";
+    src: url("fonts/hanging-letters/Hanged\ Letters.ttf");
+}
+
+@font-face {
+    font-family: Shocardcaps;
+    src: url("fonts/shocardcaps/Sho-CardCapsNF.ttf");
+}
+
+@keyframes bannerColor {
+    from {
+        color: #ee0979;
+        /* transform: translateX(25%); */
+    }
+
+    to {
+        color: #fffbd5;
+        /* transform: translateX(75%); */
+    }
+}
+
+@keyframes subtitle {
+    from {
+        color: #fffbd5;
+    }
+
+    to {
+        color: #ffc0cb;
+        font-weight: bolder;
+    }
+}
+
+@keyframes CopyMove {
+    from {
+        transform: translateX(40%);
+    }
+
+    to {
+        transform: translateX(80%);
+    }
+}
+
+@keyframes iconColor {
+    from {
+        color: #dda0dd;
+    }
+
+    to {
+        color: #ee0979;
+    }
+}
+
+main {
+    margin: 5% 5%;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* banner on */
+.banner {
+    z-index: -1;
+    padding: 1%;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0%;
+}
+
+.title {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    text-transform: uppercase;
+    position: relative;
+    right: 0%;
+    left: 0%;
+}
+
+.btitle {
+    font-family: "Hanging Letters";
+    text-transform: uppercase;
+    font-size: 5em;
+    animation: bannerColor 5s infinite alternate linear;
+    position: relative;
+    right: 0%;
+    left: 0%;
+}
+
+.stitle {
+    display: inline-block;
+    animation: subtitle 7.5s infinite alternate linear;
+}
+
+header div h2 {
+    font-family: Shocardcaps;
+    font-size: 2em;
+}
+
+/* banner off */
+
+/* nav on */
+.navbox {
+    border: 0.5em double #E5E4E2;
+    width: 100%;
+    transition: transform 5s all;
+}
+
+.navbox:hover {
+    border: 0.5em double rgba(221, 160, 221, 1);
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    border-radius: 25%;
+    width: 5em;
+    height: auto;
+    font-family: "Austie solid";
+}
+
+.mainLinks {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.linkIcons {
+    display: block;
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: 0.5em;
+}
+
+/* nav off */
+
+/* main on  */
+#showcase {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url("imgs/pawsShowcase.gif");
+    margin: 2.5% 0%;
+    z-index: -1;
+}
+
+.item {
+    width: 20em;
+    height: 22.5em;
+    margin: 1em 2.5em;
+    border-radius: 10%;
+    padding: 1%;
+    border: 0.2em double #E5E4E2;
+}
+
+.item:hover {
+    width: 20em;
+    height: 22.5em;
+    margin: 1em 2.5em;
+    border-radius: 10%;
+    padding: 1%;
+    border: 0.2em double #E5E4E2;
+    box-shadow: 0em 0em 1.25em 0.625em rgba(221, 160, 221, 1);
+    cursor: pointer;
+}
+
+div figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 15%;
+    padding: 1%;
+}
+
+.shirt {
+    position: relative;
+    z-index: 0;
+}
+
+.shirt:active {
+    position: sticky;
+    z-index: 1;
+    height: 27.5em;
+    width: auto;
+    transform: scaleY(1)
+}
+
+div figcaption {
+    font-style: italic;
+}
+
+button {
+    border: 0.2em outset #E5E4E2;
+    width: 50%;
+    margin: 1% 25%;
+    padding: 1%;
+    border-radius: 25%;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: Shocardcaps;
+    font-size: large;
+    color: #dda0dd;
+    background-color: #ffefd5;
+}
+
+button:hover {
+    color: #ee0979;
+    cursor: pointer;
+}
+
+button:active {
+    border: 0.2em solid #dda0dd;
+}
+
+/* main off  */
+
+hr {
+    color: rgba(221, 160, 221, 1);
+    margin: 1.5% 5%;
+}
+
+footer {
+    margin: 0% 1%;
+}
+
+footer div i {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2.5% auto;
+    width: 5em;
+    height: auto;
+    padding: 1%;
+    animation: iconColor 1s infinite alternate linear;
+}
+
+.copyright {
+    font-family: "Austie solid";
+    font-style: italic;
+    background-color: #ffc0cb;
+}
+
+/* GATLERÍA styles On: */
+#gatllery {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2.5% 0%;
+}
+
+.queenCat,
+.princess,
+.daisy,
+.clowy,
+.candy {
+    width: 25em;
+    height: auto;
+    margin: 5%;
+    box-shadow: 0em 0em 1.25em 0.625em rgba(221, 160, 221, 1);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .queenCat,
+    .princess,
+    .daisy,
+    .clowy,
+    .candy {
+        width: 20em;
+    }
+}
+
+figure figcaption {
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+}
+
+figcaption h3:hover {
+    background-color: #ffc0cb;
+    color: #ee0979;
+}
+
+.catllery {
+    padding: 1%;
+    margin: 2.5em;
+    border-radius: 10%;
+}
+
+.queenCat:hover {
+    width: 25em;
+    height: auto;
+    margin: 5%;
+    box-shadow: 0em 0em 1.25em 0.625em rgba(238, 9, 121, 1);
+}
+
+@media only screen and (max-width: 768px) {
+    .queenCat:hover {
+        width: 20em;
+    }
+}
+
+.princess:hover {
+    width: 25em;
+    height: auto;
+    margin: 5%;
+    box-shadow: 0em 0em 1.25em 0.625em rgba(238, 9, 121, 1);
+}
+
+@media only screen and (max-width: 768px) {
+    .princess:hover {
+        width: 20em;
+    }
+}
+
+.daisy:hover {
+    width: 25em;
+    height: auto;
+    margin: 5%;
+    box-shadow: 0em 0em 1.25em 0.625em rgba(238, 9, 121, 1);
+}
+
+@media only screen and (max-width: 768px) {
+    .clowy:hover {
+        width: 20em;
+    }
+}
+
+.clowy:hover {
+    width: 25em;
+    height: auto;
+    margin: 5%;
+    box-shadow: 0em 0em 1.25em 0.625em rgba(238, 9, 121, 1);
+}
+
+@media only screen and (max-width: 768px) {
+    .clowy:hover {
+        width: 20em;
+    }
+}
+
+.candy:hover {
+    width: 25em;
+    height: auto;
+    margin: 5%;
+    box-shadow: 0em 0em 1.25em 0.625em rgba(238, 9, 121, 1);
+}
+
+@media only screen and (max-width: 768px) {
+    .candy:hover {
+        width: 20em;
+    }
+}
+
+/* GATLERÍA styles Off */
+
+/* Contact page styles On: */
+#contactForm {
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url("imgs/pawsWay.gif");
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    margin: 5em auto;
+}
+
+fieldset {
+    border: 0.2em double #ffc0cb;
+    margin: 1% auto;
+    display: table;
+    width: fit-content;
+    height: auto;
+    padding: 1em;
+}
+
+legend {
+    font-family: Shocardcaps;
+    font-size: x-large;
+    color: #dda0dd;
+}
+
+#name,
+#mail,
+#social {
+    margin: 1% auto;
+}
+
+.break::after {
+    content: '\A';
+    white-space: pre;
+}
+
+textarea {
+    display: inline-block;
+    margin: 1% auto;
+}
+
+/* Contact page styles Off */
+
+/* Api page (f.a.q.) On: */
+
+#imgApi {
+    width: 75%;
+    border-radius: 15%;
+    margin: 5% auto;
+}
+
+#faqs {
+    border: 0.5em double papayawhip;
+    margin: 5% auto;
+    width: 100%;
+}
+
+#faqs:hover {
+    border: 0.5em double #ee0979;
+}
+
+summary h3,
+details p {
+    display: flex;
+    justify-content: center;
+    margin: 2.5%;
+}
+
+summary h3 {
+    text-decoration: underline;
+}
+
+.buy::after,
+.send::after,
+.pickUp::after {
+    content: '\A';
+    white-space: pre;
+}
+
+main h3:hover {
+    color: #ee0979;
+    cursor: pointer;
+}
+
+main p {
+    font-style: italic;
+}
+
+.imap {
+    display: flex;
+    justify-content: center;
+    margin: 5% auto;
+}
+
+iframe {
+    border: 0.2em double rgb(255, 112, 255);
+    box-shadow: 0em 0em 1.25em 0.625em rgba(238, 9, 121, 0.5);
+}
+
+/* Api page (f.a.q.) Off */
